@@ -1,6 +1,5 @@
 language: python
 python:
-<<<<<<< HEAD
   - "3.5"
 
 env:
@@ -10,26 +9,3 @@ install:
  - pip install -e .
 
 script: py.test
-=======
-- "2.6"
-- "2.7"
-- "3.2"
-- "3.3"
-- "3.4"
-- "3.5"
-- "3.5-dev" # 3.5 development branch
-- "3.6-dev" # 3.6 development branch
-- "nightly" # currently points to 3.7-dev
-  # PyPy versions
-    - "pypy"
-    - "pypy"  # PyPy2 2.5.0
-    - "pypy3" # Pypy3 2.4.0
-    - "pypy-5.3.1"
- # command to install dependencies
-  install:
-    - pip install .
-    - pip install -r requirements.txt
-# command to run tests
-script: pytest
-script: make test
->>>>>>> 796bf9ef83294d36f2ebb7a622c0ac9ca3a9a987
