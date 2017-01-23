@@ -4,8 +4,6 @@ from pyramid.response import Response
 
 def hello_world(request):
     return Response('<body><h1>welcome to the world</h1></body>')
-
-
 def main(global_config, **settings):
     config = Configurator(settings=settings)
     config.add_route('hello', '/')
