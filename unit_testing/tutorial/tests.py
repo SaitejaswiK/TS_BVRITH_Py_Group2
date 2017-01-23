@@ -1,14 +1,11 @@
 import unittest
 from pyramid import testing
 
-
 def cube(n):
     return n ** 3;
 
 def square(n):
     return n ** 2;
-
-
     
 class TutorialViewTests(unittest.TestCase):
    
@@ -19,8 +16,6 @@ class TutorialViewTests(unittest.TestCase):
     def test_area(self):
         self.assertEqual( square(2), 4);
         self.assertEqual( square(6), 36);
-        self.assertEqual( square(20), 400);
-   
-            
+        self.assertEqual( square(20), 400);            
 
  
