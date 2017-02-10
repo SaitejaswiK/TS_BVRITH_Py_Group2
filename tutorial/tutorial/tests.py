@@ -2,11 +2,8 @@ import unittest
 import transaction
 
 from pyramid import testing
-
-
 def dummy_request(dbsession):
     return testing.DummyRequest(dbsession=dbsession)
-
 
 class BaseTest(unittest.TestCase):
     def setUp(self):
@@ -27,10 +24,12 @@ class BaseTest(unittest.TestCase):
 
         self.session = get_tm_session(session_factory, transaction.manager)
 
+        
     def init_database(self):
         from .models.meta import Base
         Base.metadata.create_all(self.engine)
 
+        
     def tearDown(self):
         from .models.meta import Base
 
@@ -55,7 +54,6 @@ class TestMyViewSuccessCondition(BaseTest):
         info = my_view(dummy_request(self.session))
         self.assertEqual(info['one'].name, 'one')
         self.assertEqual(info['project'], 'tutorial')
-
 
 class TestMyViewFailureCondition(BaseTest):
 
