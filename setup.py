@@ -25,15 +25,15 @@ tests_require = [
     'pytest-cov',
     ]
 
-<<<<<<< HEAD
+
 setup(name='Prj',
       version='0.0',
       description='Prj',
-=======
+
 setup(name='Prjt',
       version='0.0',
       description='Prjt',
->>>>>>> 285f6f0ed29be16f453d4ccfab0b974c0fb1db6a
+
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
           "Programming Language :: Python",
@@ -54,14 +54,13 @@ setup(name='Prjt',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-<<<<<<< HEAD
+
       main = prj:main
       [console_scripts]
       initialize_Prj_db = prj.scripts.initializedb:main
-=======
+
       main = prjt:main
       [console_scripts]
       initialize_Prjt_db = prjt.scripts.initializedb:main
->>>>>>> 285f6f0ed29be16f453d4ccfab0b974c0fb1db6a
       """,
       )
