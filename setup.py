@@ -17,6 +17,9 @@ requires = [
     'transaction',
     'zope.sqlalchemy',
     'waitress',
+
+
+    'passlib'
     ]
 
 tests_require = [
@@ -25,15 +28,9 @@ tests_require = [
     'pytest-cov',
     ]
 
-
-setup(name='Prj',
-      version='0.0',
-      description='Prj',
-
 setup(name='Prjt',
       version='0.0',
       description='Prjt',
-
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
           "Programming Language :: Python",
