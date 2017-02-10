@@ -1,2 +1,6 @@
 include *.txt *.ini *.cfg *.rst
+<<<<<<< HEAD
 recursive-include prj *.ico *.png *.css *.gif *.jpg *.jinja2 *.pt *.txt *.mak *.mako *.js *.html *.xml
+=======
+recursive-include prjt *.ico *.png *.css *.gif *.jpg *.jinja2 *.pt *.txt *.mak *.mako *.js *.html *.xml
+>>>>>>> 285f6f0ed29be16f453d4ccfab0b974c0fb1db6a

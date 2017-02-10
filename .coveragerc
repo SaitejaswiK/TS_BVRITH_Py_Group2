@@ -1,3 +1,8 @@
 [run]
+<<<<<<< HEAD
 source = prj
 omit = prj/test*
+=======
+source = prjt
+omit = prjt/test*
+>>>>>>> 285f6f0ed29be16f453d4ccfab0b974c0fb1db6a

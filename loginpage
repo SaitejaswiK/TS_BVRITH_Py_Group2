@@ -1,0 +1,41 @@
+<html>
+</head>
+   <title>{loginpage}</title>
+   <meta charset="utf-8">
+ </head>
+<body>
+<center><h1>loginpage</h1></center>
+
+
+
+<center><form action="${url}" method="post">
+    <input type="hidden" name="came_from" value="${came_from}"/>
+    <input type="text" name="login" value="username"/><br/>
+
+    <input type="password" name="password"
+           value=""/><br/>
+    <label>
+            <input type="checkbox" name="remember_me" id="remember_me">
+            Remember me on this computer
+          </label>
+        </p>
+    <!--<input type="submit" name="form.submitted" value="Log In"/-->
+    <!-- <button type="button" class="btn btn-success">submit</button>-->
+      </p>
+        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      
+    
+    <div class="login-help">
+      <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+    </div>
+    <ul>
+        <li class="active"><a href="index.html">Signin as Faculty</a></li>
+        <li class="active"><a href="index.html">Signin as Student</a></li>
+    </ul>
+
+
+
+</form>
+</body>
+</center>
+</html>
