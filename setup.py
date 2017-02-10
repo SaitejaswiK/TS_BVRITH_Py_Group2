@@ -54,11 +54,6 @@ setup(name='Prjt',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-
-      main = prj:main
-      [console_scripts]
-      initialize_Prj_db = prj.scripts.initializedb:main
-
       main = prjt:main
       [console_scripts]
       initialize_Prjt_db = prjt.scripts.initializedb:main
