@@ -1,0 +1,3 @@
+[run]
+source = prj
+omit = prj/test*
